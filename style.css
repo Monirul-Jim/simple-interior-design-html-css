@@ -1,0 +1,97 @@
+.main_sidebar {
+  background-color: orangered;
+  width: 10%;
+  height: 60%;
+  position: fixed;
+  margin-top: 0;
+  color: white;
+}
+.main_sidebar-section {
+  margin-top: 110px;
+  font-size: 20px;
+}
+.main_sidebar li {
+  list-style: none;
+  line-height: 30px;
+}
+.container {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+.showcase {
+  font: 500;
+  font-size: 24px;
+  color: orangered;
+}
+.line-break-height {
+  width: 20px;
+  padding: 2px;
+  background-color: red;
+  border-radius: 5px;
+}
+.main {
+  margin-top: 100px;
+}
+
+.hero-part-image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+.hero-part-image-grid img {
+  width: 500px; /* Set the width of each image */
+  height: auto; /* Maintain aspect ratio */
+}
+.designers-chosen {
+  font-size: 20px;
+  font-weight: bold;
+}
+.card {
+  background-color: #eaeff4; /* Slate color */
+  width: 300px; /* Set the width of the card */
+  height: 400px; /* Set the height of the card */
+}
+.card h1 {
+  margin-left: 10px;
+}
+.designers-occupation {
+  color: #9aa4b0;
+  margin-left: 10px;
+}
+.designers-description {
+  color: #636a72;
+  margin-left: 10px;
+}
+.card img {
+  width: 100%; /* Ensure the image fills the container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px 10px 0px 0px;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.basic-package {
+  background-color: #656b72;
+  width: 300px;
+  height: 60px;
+  color: rgb(237, 230, 230);
+}
+.basic-package-li-tag {
+  list-style: none;
+  border-bottom: 1px solid slategray;
+}
+.basic-package-li-tag li {
+  border-bottom: 1px solid rgb(226, 231, 235);
+  line-height: 40px;
+  text-align: center;
+}
+.basic-package-body-color {
+  background-color: #f1f1f3;
+}
+.sign-up {
+  background-color: white;
+  padding: 10px;
+  border: none;
+}
