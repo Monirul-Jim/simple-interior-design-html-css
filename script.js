@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         signUpButton.addEventListener('click', function () {
             chosenRoomsElement.textContent = roomCount;
+            package.querySelector('.footer').style.display = 'block';
         });
 
         function updatePackageDetails() {
@@ -34,4 +35,10 @@ document.addEventListener('DOMContentLoaded', function () {
             roomCountElement.textContent = roomCount.toString();
         }
     });
+});
+// here start the form function js
+document.getElementById('contactForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+    alert('You have submitted successfully!');
+    this.reset();
 });

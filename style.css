@@ -17,7 +17,7 @@
 }
 .container {
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 15% 85%;
 }
 .interior-design {
   font-size: 50px;
@@ -54,10 +54,10 @@
 .hero-part-image-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
+  grid-gap: 5px;
 }
 .hero-part-image-grid img {
-  width: 500px; /* Set the width of each image */
+  width: 600px; /* Set the width of each image */
   height: auto; /* Maintain aspect ratio */
 }
 .designers-chosen {
@@ -153,6 +153,10 @@
   border: none;
   font-size: 20px;
 }
+.footer {
+  display: none;
+}
+
 .sign-up {
   cursor: pointer;
   text-align: center;
@@ -169,7 +173,7 @@
   color: white;
 }
 .input-style {
-  width: 100%;
+  width: 95%;
   padding: 10px;
   border: 2px solid #ccc;
   border-radius: 5px;
@@ -185,10 +189,13 @@
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 .send-message {
-  width: 100%;
+  width: 96%;
+  margin-left: 7px;
+  /* margin-right: 10px; */
   text-align: center;
   background-color: orangered;
   padding: 10px;
   border: none;
   color: white;
+  cursor: pointer;
 }
