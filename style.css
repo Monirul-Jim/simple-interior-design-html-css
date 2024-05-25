@@ -19,29 +19,36 @@
   display: grid;
   grid-template-columns: 20% 80%;
 }
-.showcase {
-  font: 500;
-  font-size: 24px;
-  color: orangered;
+.interior-design {
+  font-size: 50px;
+  font-family: sans-serif;
 }
-.highlight {
-  position: relative;
-  display: inline-block;
-  padding-bottom: 5px; /* Adjust padding as needed */
+.showcase-container {
+  display: flex;
+  align-items: center;
 }
 
-.highlight::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 6px; /* Adjust the height of the underline */
-  width: 100%; /* The underline will cover the width of the word "Show" */
-  background-color: orangered; /* Adjust the color of the underline */
-  border-radius: 10px;
+.showcase {
+  font-weight: 500;
+  font-size: 24px;
+  color: orangered;
+  margin-right: 10px; /* Add some space between the text and the hr */
+}
+
+.line-break-height {
+  width: 40px;
+  height: 6px; /* Set height instead of padding for a horizontal line */
+  background-color: red;
+  border-radius: 5px;
+  margin: 0; /* Remove default margins */
+}
+
+.highlight {
+  border-bottom: 2px solid orangered; /* Adjust the border size and color as needed */
+  display: inline-block;
 }
 .main {
-  margin-top: 100px;
+  margin-top: 70px;
 }
 
 .hero-part-image-grid {
