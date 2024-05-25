@@ -8,7 +8,8 @@
 }
 .main_sidebar-section {
   margin-top: 110px;
-  font-size: 20px;
+  font-size: 15px;
+  font-weight: bold;
 }
 .main_sidebar li {
   list-style: none;
@@ -23,11 +24,21 @@
   font-size: 24px;
   color: orangered;
 }
-.line-break-height {
-  width: 20px;
-  padding: 2px;
-  background-color: red;
-  border-radius: 5px;
+.highlight {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px; /* Adjust padding as needed */
+}
+
+.highlight::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 6px; /* Adjust the height of the underline */
+  width: 100%; /* The underline will cover the width of the word "Show" */
+  background-color: orangered; /* Adjust the color of the underline */
+  border-radius: 10px;
 }
 .main {
   margin-top: 100px;
@@ -72,26 +83,105 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
-.basic-package {
-  background-color: #656b72;
-  width: 300px;
-  height: 60px;
-  color: rgb(237, 230, 230);
+
+.basic-pro-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
-.basic-package-li-tag {
-  list-style: none;
-  border-bottom: 1px solid slategray;
+.basic-container {
+  width: 500px;
+  margin: 50px auto;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* padding: 10px; */
 }
-.basic-package-li-tag li {
-  border-bottom: 1px solid rgb(226, 231, 235);
-  line-height: 40px;
+
+.header {
+  background-color: #333;
+  color: #fff;
   text-align: center;
+  padding: 15px 0;
+  /* border-radius: 5px 5px 0 0; */
 }
-.basic-package-body-color {
-  background-color: #f1f1f3;
+.header2 {
+  background-color: orangered;
+  color: #fff;
+  text-align: center;
+  padding: 0.1px 0;
+  /* border-radius: 5px 5px 0 0; */
+}
+
+.header h2 {
+  margin: 0;
+}
+
+.content {
+  padding: 10px;
+}
+
+.feature {
+  text-align: center;
+  border-bottom: 1px solid #e8dfdf;
+  padding: 10px 0;
+}
+
+.price {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+.footer {
+  text-align: center;
+  padding: 10px 0;
+}
+.minus-button {
+  cursor: pointer;
+  border: none;
+  font-size: 20px;
+}
+.plus-button {
+  cursor: pointer;
+  border: none;
+  font-size: 20px;
 }
 .sign-up {
+  cursor: pointer;
+  text-align: center;
   background-color: white;
   padding: 10px;
   border: none;
+}
+.sign-up2 {
+  cursor: pointer;
+  text-align: center;
+  background-color: orangered;
+  padding: 10px;
+  border: none;
+  color: white;
+}
+.input-style {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #555;
+  outline: none;
+  display: block;
+  margin: 5px;
+}
+
+.input-style:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+.send-message {
+  width: 100%;
+  text-align: center;
+  background-color: orangered;
+  padding: 10px;
+  border: none;
+  color: white;
 }
